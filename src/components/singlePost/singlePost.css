@@ -1,0 +1,215 @@
+.singlePost{
+    width: 80%;
+    margin: auto;
+    border: 2px inset rgb(136, 130, 130);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.singlePostWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePostImg{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.singlePostTitle{
+    font-family: 'Rubik', sans-serif;    text-align: center;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.singlePostTitleInput{
+    font-family: 'Rubik', sans-serif;
+    /* text-align: center; */
+    font-size: 28px;
+    margin: 10px;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.singlePostTitleInput:focus{
+    outline: none;
+    /* border-bottom: solid 1px rgb(241, 240, 240); */
+}
+
+.grow-wrapEdit {
+/* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+ display: grid;
+ width: 98%;
+ margin-left: 10px;
+}
+.grow-wrapEdit::after {
+ /* Note the weird space! Needed to preventy jumpy behavior */
+ content: attr(data-replicated-value) " ";
+      
+ /* This is how textarea text behaves */
+white-space: pre-wrap;
+      
+/* Hidden from view, clicks, and screen readers */
+ visibility: hidden;
+    }
+.grow-wrapEdit > textarea {
+ /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+ resize: none;
+      
+/* Firefox shows scrollbar on growth, you can hide like this. */
+overflow: hidden;
+}
+.grow-wrapEdit > textarea,
+.grow-wrapEdit::after {
+/* Identical styling required!! */
+border: 1px solid black;
+padding: 0.5rem;
+font: inherit;
+ border: none;
+ border-left: 1px solid rgb(216, 216, 216);
+ margin-bottom: 30px;
+ margin-top: 20px;
+ padding-left: 20px;
+      
+/* Place on top of each other */
+ grid-area: 1 / 1 / 2 / 2;
+}
+    
+.grow-wrapEdit>textarea:focus{
+    outline: none;
+}
+
+.Icons{
+    float: right;
+    font-size: 16px;
+}
+
+.edit{
+    margin-left: 10px;
+    cursor: pointer;
+    color: teal;
+    font-size: 25px;
+}
+
+.delete{
+    margin-left: 20px;
+    cursor: pointer;
+    color: tomato;
+    font-size: 25px;
+}
+
+.singlePostInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #b39656;
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    margin: auto 20px;
+}
+
+
+.singlePostDesc{
+    width: 100%;
+    font-size: 18px;
+    color: #666;
+    line-height: 28px;
+    padding: 20px;
+    border-left: 1px solid rgb(209, 209, 209);
+}
+
+.singlePostDescInput{
+    font-size: 18px;
+    color: #666;
+    line-height: 25px;
+    border: none;
+    height: 500px;
+}
+
+.singlePostDescInput:focus{
+    outline: none;
+}
+
+.singlePostDesc::first-letter{
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.updatePostBtn{
+    width: 100px;
+    border-radius: 15px;
+    align-self: center;
+    /* position:absolute;
+    bottom: 10px; */
+    margin-top: auto;
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+
+    .singlePost{
+        width: 90%;
+        /* height: 95vh; */
+        padding: 10px;
+        margin: auto;
+    }
+
+    .singlePostImg{
+        height: 150px;
+    }
+
+    .singlePostTitle{
+        font-size: 17px;
+    }
+
+    .singlePostTitleInput{
+        font-size: 17px;
+        margin-top: 10px;
+        width: 95%;
+        resize: vertical;
+    }
+
+    .singlePostInfo{
+        font-size: 10px;
+        margin: auto 15px;
+    }
+
+    .singlePostDesc{
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .singlePostDescInput{
+        font-size: 12px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .grow-wrapEdit{
+        font-size: 12px;
+    }
+
+    .edit{
+        font-size: 15px;
+    }
+
+    .delete{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .updatePostBtn{
+        width: 70px;
+        font-size: 12px;
+        padding: 3px;
+    }
+
+}

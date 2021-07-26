@@ -1,0 +1,206 @@
+.settings{
+    display: flex;
+    margin: 40px;
+    font-family: 'Varela Round', sans-serif;
+    z-index: 1;
+}
+
+
+.settingsWrapper{
+    width: 40%;
+    margin: auto;
+}
+
+.settingsTitle{
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+}
+
+.updateTitle{
+    color: rgb(80, 80, 80);
+    font-size: 30px;
+}
+
+.deleteTitle{
+    border-radius: 20px;
+}
+
+.settingsPP{
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    margin: auto;
+}
+
+.settingsPP > img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* margin-top: 15px;    */
+}
+
+
+.settingsForm,.userDetails{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.userDetails > label{
+    margin-top: 20px;
+}
+
+.userDetails > input{
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.userDetails > input:focus{
+    outline: none;
+}
+
+.updateBtn{
+    align-self: center;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.popUp{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    width: 400px;
+    background-color: rgb(238, 238, 238);
+    z-index: 100;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.popUp>p{
+    margin-bottom: 0;
+}
+
+.popUp>button{
+    margin-right: 10px;
+}
+
+
+.overlayImg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(1,1,1,0.4);
+    cursor: pointer;
+}
+  
+  .settingsPP:hover .overlayImg {
+    opacity: 1;
+  }
+
+  .overlayIcon {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .overlayIcon:hover {
+    color: #eee;
+  }
+  
+
+@media only screen and (max-width: 550px){
+
+    .settingsWrapper{
+        width: 90%;
+    }
+
+    .userDetails>label{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .userDetails>input{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .passInput::placeholder{
+        font-size: 15px;
+    }
+
+    .updateTitle{
+        font-size: 20px;
+    }
+
+    .deleteTitle{
+        font-size: 12px;
+        width: 100px;
+        padding: 5px;
+    }
+
+    .settingsPP{
+        width: 80px;
+        height: 80px;
+    }
+
+    .settingsPP>img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .overlayIcon{
+        font-size: 25px;
+        color: #eee;
+    }
+
+    .popUp{
+        left: 20%;
+        top: 30%;
+        width: 300px;
+    }
+
+    .popUp>p{
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .popUp>button{
+        width: 30%;
+        padding: 4px;
+        font-size: 13px;
+    }
+
+}

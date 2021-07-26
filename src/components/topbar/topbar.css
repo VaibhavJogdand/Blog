@@ -1,0 +1,232 @@
+.top{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #E1E5EA;
+    z-index: 999;
+    color: #2A2438;
+    padding: 5px 0;
+    box-shadow:
+  0 12.1px 2.9px -8px rgba(0, 0, 0, 0.025),
+  0 17.5px 6.9px -8px rgba(0, 0, 0, 0.036),
+  0 21.4px 13px -8px rgba(0, 0, 0, 0.045),
+  0 28.1px 23.2px -8px rgba(0, 0, 0, 0.054),
+  0 40.1px 43.4px -8px rgba(0, 0, 0, 0.065),
+  0 58px 104px -8px rgba(0, 0, 0, 0.09)
+;
+
+
+
+
+  
+
+}
+
+.firstPart{
+    flex: 9;
+    display: flex;
+}
+
+
+.topRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topLeft{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+.ddmenu{
+    background-color: rgb(1,1,1, 0.3);
+    color: #DBD8E3;
+    list-style-type:none;
+    position:absolute;
+    top: 50px;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.dropdown-item{
+    color: #ffffff;
+}
+
+.menuBtn{
+    display: none;
+    visibility: hidden;
+}
+
+.topCenter{
+    flex: 6;
+    display: flex;
+}
+
+.navigateIcon{
+
+}
+
+.expandIcon{
+    margin-bottom: 1px;
+}
+
+.topIcon{
+    font-size: 20px;
+    margin-right: 10px ;
+    color: #444;
+    cursor: pointer;
+}
+
+.topImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.topList{
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.topListItem{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #2A2438;
+
+}
+
+.topSearchIcon{
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .top{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+        height: 50px;
+        box-shadow:
+  0 12.1px 2.9px -8px rgba(0, 0, 0, 0.025),
+  0 17.5px 6.9px -8px rgba(0, 0, 0, 0.036),
+  0 21.4px 13px -8px rgba(0, 0, 0, 0.045),
+  0 28.1px 23.2px -8px rgba(0, 0, 0, 0.054),
+  0 40.1px 43.4px -8px rgba(0, 0, 0, 0.065),
+  0 58px 104px -8px rgba(0, 0, 0, 0.09)
+;
+
+    }
+
+    .firstPart{
+        display: none;
+    }
+
+    .firstPartMo {
+      display: flex;
+      flex-direction: column;
+      background-color: #E1E5EA;
+      width: 100%;
+      margin-top: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      /* display: none; */
+    }
+    
+    .topLeft{
+        display:inline;
+        margin: auto;
+        height: 20px;
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .ddmenu{
+        position: relative;
+        padding: 5px;
+        margin-bottom: 0;
+        top: 0px;
+        background-color: rgb(104, 104, 104, 0);
+    }
+
+    .dropdown-item{
+        color: rgb(179, 179, 179);
+    }
+
+    .topCenter{
+        display: flex;
+    }
+    
+    .topList{
+        display: block;
+        margin-left: 20px;
+        list-style-type:none;
+    }
+
+    .topListItem{
+        margin-top: 20px;
+        font-size: 15px;
+    }    
+
+    .menuBtn{
+        display: inherit;
+        visibility: inherit;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .closeBtn{
+        display: inherit;
+        visibility: inherit;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        font-size: 25px;
+    }
+
+    .topRight{
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        align-items: right;
+    }
+
+    .topRightList{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .topListItemRight{
+        
+        margin: auto 5px;
+    }
+
+    .userLogo{
+        width: 30px;
+        height: 30px;
+    }
+
+}

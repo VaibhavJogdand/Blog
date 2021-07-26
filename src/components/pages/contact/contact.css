@@ -1,0 +1,161 @@
+.contact{
+    display: flex;
+    height: calc(95vh);
+    background-color: #2A2438;
+    flex-direction: column;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.contactWrapper{
+    display: flex;
+    width: 60%;
+    background-color: #2A2438;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #DBD8E3;
+}
+
+.contactForm>::placeholder{
+    color: #5C5470;
+}
+
+.contactTitle{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.contactForm{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactInput,.contactTextArea{
+    width: 47%;
+    border: none;
+    background-color: #2A2438;
+    color: #DBD8E3;
+    border-bottom: 2px solid #352F44;
+}
+
+.contactInput::placeholder{
+    color: #5C5470;
+}
+
+.contactTextArea{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.contactTextArea:focus{
+    outline: none;
+}
+
+.contactInput:first-child{
+    /* margin-right: 20px; */
+}
+
+.contactSubmit{
+    margin: 60px auto;
+    border: 1px solid #DBD8E3;
+    color: #DBD8E3;
+    background-color: #352F44;
+}
+
+.contactSubmit:hover{
+    border: 1px solid #352F44;
+    color: #352F44;
+    background-color: #DBD8E3;
+}
+
+.social{
+    margin-top: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.socialIcon{
+    margin: 10px;
+    color: #5C5470;
+}
+
+.socialIcon:hover{
+    font-size: 20px;
+    color: #DBD8E3;
+    
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    .contactWrapper{
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .contactTitle{
+        width: 50%;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contactForm{
+        width: 60%;
+        margin-top: 0;
+
+    }
+
+    .inputWrapper{
+        justify-content: unset;
+        flex-wrap: wrap;
+    }
+
+    .contactInput:first-child{
+        margin: auto;
+    }
+
+    .contactInput{
+        width: 100%;
+        margin: auto;
+        margin-top: 25px;
+        padding-left: 0;
+    }
+
+    .contactInput::placeholder{
+        font-size: 12px;
+        margin-right: auto;
+        color: #5C5470;
+    }
+
+    .social{
+        margin-top: auto;
+    }
+
+    .socialIcon{
+        font-size: 17px;
+    }
+    
+    .social>a{
+        width: fit-content;
+        padding: 0%;
+    }
+
+    .contactSubmit{
+        margin-bottom: 0;
+    }
+
+}

@@ -1,0 +1,222 @@
+.write{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.writeForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90vw;
+}
+
+.writeImg{
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.writeFormGroup{
+    width: 100%;
+    align-items: center;
+}
+
+.grow-wrap {
+/* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+ display: grid;
+ width: 100%;
+
+}
+.grow-wrap::after {
+ /* Note the weird space! Needed to preventy jumpy behavior */
+ content: attr(data-replicated-value) " ";
+  
+ /* This is how textarea text behaves */
+white-space: pre-wrap;
+  
+/* Hidden from view, clicks, and screen readers */
+ visibility: hidden;
+}
+.grow-wrap > textarea {
+ /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+ resize: none;
+  
+/* Firefox shows scrollbar on growth, you can hide like this. */
+overflow: hidden;
+}
+.grow-wrap > textarea,
+.grow-wrap::after {
+/* Identical styling required!! */
+border: 1px solid black;
+padding: 0.5rem;
+font: inherit;
+ border: none;
+ border-left: 1px solid rgb(216, 216, 216);
+ margin-bottom: 30px;
+  
+/* Place on top of each other */
+ grid-area: 1 / 1 / 2 / 2;
+}
+
+.grow-wrap>textarea:focus{
+    outline: none;
+}
+
+.writeFormGroup>label{
+    width: fit-content;
+}
+
+.writeIcon{
+    font-size: 22px;
+    color: rgb(73, 73, 73);
+    cursor: pointer;
+}
+
+.writeInput{
+    border: none;
+    width: 65vw;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.writeInput:focus{
+    outline: none;
+}
+
+/* .writeText{
+    width: 100%;
+    font-size: 20px;
+    min-height: 400px;
+    border-left: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin: auto;
+    margin-bottom: 20px;
+} */
+
+.btnContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.writeSubmit{
+    width: 80px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding:  5px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.selectCat{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-left: 1px solid rgb(216, 216, 216);
+    margin-right: auto;
+}
+
+.selectCatTitle{
+    color: rgb(141, 140, 140);
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.selectCatWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.selectCatItem{
+    display: flex;
+    align-items: center;
+    color: rgb(70, 70, 70);
+}
+
+.selectCatItem>label{
+    margin: auto 25px auto 7px;
+}
+
+
+@media only screen and (max-width: 550px){
+
+    .write{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    ::placeholder{
+        font-size: 20px;
+    }
+
+    .writeForm{
+        width: 90vw;
+        margin: auto;
+        align-items: center;
+    }
+
+    .writeFormGroup{
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .writeImg{
+        margin: auto;
+        width: 90%;
+        justify-self: center;
+        height: 200px;
+    }
+
+    .writeIcon{
+        font-size: 18px;
+    }
+
+    .writeInput{
+        width: 90%;
+        margin-right: auto;
+        font-size: 19px;
+    }
+
+    .grow-wrap{
+        width: 96%;
+        font-size: 16px;
+    }
+
+    .writeSubmit{
+        margin-top: 70px;
+    }
+
+    .selectCat{
+        width: 96%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .selectCatWrapper{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 12px;
+        
+    }
+
+    .selectCatItem{
+        width: 35%;
+        margin: 7px auto;
+    }
+
+}

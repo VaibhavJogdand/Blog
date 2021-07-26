@@ -1,0 +1,115 @@
+.register{
+    height: calc(100vh - 50px);    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;   
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #DBD8E3;
+    color: #DBD8E3;
+}
+
+.regiTitle{
+    font-size: 120px;
+    color: #2A2438;
+    text-shadow: 4px 4px 5px #2A2438;
+}
+
+.registerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+label{
+    margin: 10px 0;
+    color: #2A2438;
+}
+
+.regiInput{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #5C5470;
+    color: #DBD8E3;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    margin-top: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3e3755;
+    color: #DBD8E3;
+    font-size: 15px;
+}
+
+.regiLoginBtn{
+    background-color: #352F44 ;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+.err-msg{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(226, 117, 98);
+    background-color: black;
+}
+
+@media only screen and (max-width: 1100px){
+
+    .regiTitle{
+        font-size: 80px;
+        margin-top: 50px;
+    }
+
+    .regiLoginBtn{
+        right: 0;
+        width: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+
+
+    .regiTitle{
+        margin-top: 100px;
+        font-size: 60px;
+    }
+
+    .Btn{
+        width: 100px;
+        padding: 5px;
+    }
+
+    .regiInput{
+        padding: 7px 13px;
+        font-size: 13px;
+    }
+
+    .registerBtn{
+        margin: 30px auto;
+    }
+
+    .regiInput::placeholder{
+        font-size: 13px;
+    }
+
+
+}
+

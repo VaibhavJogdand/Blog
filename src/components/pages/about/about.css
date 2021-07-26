@@ -1,0 +1,119 @@
+.about{
+    height: calc(100vh - 50px);    
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    /* background-image: url('https://images.pexels.com/photos/97076/pexels-photo-97076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+    background-color: #2A2438;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutWrapper{
+    display: flex;
+    color: #EEEEEE;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 20vh;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+}
+
+h1{
+    font-size: 140px;
+    margin: 0
+}
+
+.line{
+    width: 7px;
+    height: 125px;
+    background-color: #EEEEEE;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+    width: 500px;
+}
+
+.aboutSocial{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px){
+    
+    .aboutWrapper{
+        margin-top: 25vh;
+    }
+    
+    .aboutTitle{
+        font-size: 80px;
+    }
+
+    .line{
+        height: 80px;
+        width: 5px;
+        margin-right: 7px;
+        margin-top: 3px;
+    }
+
+    .aboutText{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .about{
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .aboutWrapper{
+        align-items: left;
+        margin: auto;
+        margin-top: 30vh;
+    }
+
+    .title{
+        align-items: left;
+        justify-content: left;
+        margin-left: 50px;
+        margin-right: auto;
+    }
+
+    .line{
+        height: 50px;
+        margin-top: 10px;
+        width: 5px;
+        margin-right: 7px;
+    }
+
+    .aboutTitle{
+        font-size: 50px;
+        margin: auto;
+    }
+
+    .aboutText{
+        color: #DBD8E3;
+        width: 80%;
+        margin: auto;
+        margin-left: 50px;
+        margin-right: auto;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .aboutSocial{
+        left: 30%
+    }
+
+}
