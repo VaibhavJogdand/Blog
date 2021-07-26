@@ -11,7 +11,7 @@ export default function Settings() {
     const [email,setEmail] = useState(user.email);
     const [password,setPassword] = useState('');
     const [file,setFile] = useState(null);
-    const PF = 'http://localhost:5000/images/';
+    const PF = 'https://blog-backend28.herokuapp.com/images/';
     const [showConfirm,setShowConfirm] = useState(false);
 
 

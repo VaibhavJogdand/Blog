@@ -11,7 +11,7 @@ import { Context } from '../../context/Context';
 
 export default function Sidebar() {
 
-    const PF = 'http://localhost:5000/images/'
+    const PF = 'https://blog-backend28.herokuapp.com/images/'
     const [cats,setCats] = useState([]);
     const {user} = useContext(Context);
 

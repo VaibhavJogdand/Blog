@@ -18,7 +18,7 @@ export default function Topbar() {
     const {user,dispatch} = useContext(Context);
     const [dropDown,setDropDown] = useState(false);
     const [mobile,setMobile] = useState(false);
-    const PF = 'http://localhost:5000/images/'
+    const PF = 'https://blog-backend28.herokuapp.com/images/'
     const handleLogout = ()=>{
         dispatch({type : 'LOGOUT'});
         
