@@ -33,10 +33,10 @@ export default function Contact(){
                 </form>
             </div>
             <div className='social'>
-                <a className='link' href='https://www.facebook.com/profile.php?id=100008846442286' target='_blank'><FaFacebookSquare className="socialIcon"/></a>
-                <a className='link' href='https://twitter.com/vrjogdand708' target='_blank'><FaTwitterSquare className="socialIcon"/></a>
-                <a className='link' href='https://www.linkedin.com/in/vaibhav-jogdand-8356601b1/' target='_blank'><FaLinkedin className="socialIcon"/></a>
-                <a className='link' href='https://www.instagram.com/i.am__vaibhav__/' target='_blank'><FaInstagram className="socialIcon"/></a>
+                <a className='link' href='https://www.facebook.com/profile.php?id=100008846442286' target='_blank' rel="noopener noreferrer"><FaFacebookSquare className="socialIcon"/></a>
+                <a className='link' href='https://twitter.com/vrjogdand708' target='_blank' rel="noopener noreferrer"><FaTwitterSquare className="socialIcon"/></a>
+                <a className='link' href='https://www.linkedin.com/in/vaibhav-jogdand-8356601b1/' target='_blank' rel="noopener noreferrer"><FaLinkedin className="socialIcon"/></a>
+                <a className='link' href='https://www.instagram.com/i.am__vaibhav__/' target='_blank' rel="noopener noreferrer"><FaInstagram className="socialIcon"/></a>
             </div>
         </div>
     )

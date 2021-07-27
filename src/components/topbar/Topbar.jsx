@@ -2,15 +2,8 @@ import React, { useContext, useState } from 'react';
 import { MdNavigateNext,MdClose,MdArrowDropDown } from "react-icons/md";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './topbar.css'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import {Link} from 'react-router-dom';
 import { Context } from '../../context/Context';
 
 

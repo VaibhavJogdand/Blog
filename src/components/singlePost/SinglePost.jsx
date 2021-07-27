@@ -1,7 +1,4 @@
 import './singlePost.css'
-import {  } from "../../components/sidebar/Sidebar";
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import {useContext, useEffect,useState } from 'react';

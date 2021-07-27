@@ -1,7 +1,6 @@
 import './settings.css'
-import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { IoCamera } from 'react-icons/io5';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Context } from '../../../context/Context';
 import axios from 'axios';
 

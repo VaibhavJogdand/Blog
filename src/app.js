@@ -6,17 +6,14 @@ import Write from "./components/pages/write/Write";
 import Settings from "./components/pages/settings/Settings";
 import Login from "./components/pages/login/Login";
 import Register from "./components/pages/register/Register";
-import Details from './components/pages/details/Details'
 import About  from "./components/pages/about/About";
 import Contact from "./components/pages/contact/Contact";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import { Context } from "./context/Context";
-import Footer from "./components/footer/Footer";
 
 function App() {
   const {user} = useContext(Context);
@@ -42,9 +39,6 @@ function App() {
        </Route>
        <Route path='/post/'>
           <Single />
-       </Route>
-       <Route path='/details'>
-          <Details />
        </Route>
        <Route path='/About'>
           <About />

@@ -1,10 +1,8 @@
 import './write.css'
 import { BiImageAdd } from "react-icons/bi";
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import axios from 'axios';
 import { Context } from '../../../context/Context';
-import FileBase64 from 'react-file-base64';
-import $ from 'jquery';
 
 
 export default function Write() {
@@ -15,7 +13,6 @@ export default function Write() {
     const descRef = useRef();
     const [file,setFile] = useState(null);
     const [cat,setCat] = useState(null);
-    const [inputElm,setinputElm] = useState();
 
     const handleSubmit = async(e) =>{
         e.preventDefault();
