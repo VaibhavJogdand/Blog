@@ -2,7 +2,7 @@ import './settings.css'
 import { IoCamera } from 'react-icons/io5';
 import { useContext, useState } from 'react';
 import { Context } from '../../../context/Context';
-import axios from 'axios';
+import axios from '../../../axios';
 
 export default function Settings() {
     const {user,dispatch} = useContext(Context);

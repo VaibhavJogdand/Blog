@@ -1,7 +1,7 @@
 import Header from "../../header/Header";
 import "./home.css"
 import Posts from "../../posts/Posts";
-import axios from 'axios';
+import axios from '../../../axios';
 import {useState,useEffect} from 'react';
 import { useLocation } from "react-router-dom";
 import Footer from "../../footer/Footer";

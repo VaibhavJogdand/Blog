@@ -1,7 +1,7 @@
 import './write.css'
 import { BiImageAdd } from "react-icons/bi";
 import { useContext, useRef, useState } from 'react';
-import axios from 'axios';
+import axios from '../../../axios';
 import { Context } from '../../../context/Context';
 
 
