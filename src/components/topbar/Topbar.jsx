@@ -31,11 +31,11 @@ export default function Topbar() {
                    
                    {dropDown && (
                            <ul className="ddmenu">
-                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href='http://localhost:3000?cat=tech'>Tech</a></li>
-                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="http://localhost:3000?cat=music">Music</a></li>
-                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="http://localhost:3000?cat=sports">Sports</a></li>
-                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="http://localhost:3000?cat=programming">Programming</a></li>
-                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="http://localhost:3000?cat=philosophy">Philosophy</a></li>
+                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href='https://peaceful-kirch-4f91ce.netlify.app?cat=tech'>Tech</a></li>
+                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="https://peaceful-kirch-4f91ce.netlify.app?cat=music">Music</a></li>
+                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="https://peaceful-kirch-4f91ce.netlify.app?cat=sports">Sports</a></li>
+                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="https://peaceful-kirch-4f91ce.netlify.app?cat=programming">Programming</a></li>
+                            <li onClick={()=>{setDropDown(false); setMobile(false)}}><a className="dropdown-item" href="https://peaceful-kirch-4f91ce.netlify.app?cat=philosophy">Philosophy</a></li>
                           </ul>
                    )}
             </div>

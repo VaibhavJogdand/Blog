@@ -9,20 +9,12 @@
     z-index: 999;
     color: #2A2438;
     padding: 5px 0;
-    box-shadow:
-  0 12.1px 2.9px -8px rgba(0, 0, 0, 0.025),
-  0 17.5px 6.9px -8px rgba(0, 0, 0, 0.036),
-  0 21.4px 13px -8px rgba(0, 0, 0, 0.045),
-  0 28.1px 23.2px -8px rgba(0, 0, 0, 0.054),
-  0 40.1px 43.4px -8px rgba(0, 0, 0, 0.065),
-  0 58px 104px -8px rgba(0, 0, 0, 0.09)
-;
-
-
-
-
-  
-
+    box-shadow: 0 12.1px 2.9px -8px rgba(0, 0, 0, 0.025),
+    0 17.5px 6.9px -8px rgba(0, 0, 0, 0.036),
+    0 21.4px 13px -8px rgba(0, 0, 0, 0.045),
+    0 28.1px 23.2px -8px rgba(0, 0, 0, 0.054),
+    0 40.1px 43.4px -8px rgba(0, 0, 0, 0.065),
+    0 58px 104px -8px rgba(0, 0, 0, 0.09);
 }
 
 .firstPart{
@@ -71,10 +63,6 @@
     display: flex;
 }
 
-.navigateIcon{
-
-}
-
 .expandIcon{
     margin-bottom: 1px;
 }
@@ -108,7 +96,6 @@
     font-weight: 300;
     cursor: pointer;
     color: #2A2438;
-
 }
 
 .topSearchIcon{

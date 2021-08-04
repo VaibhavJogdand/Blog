@@ -212,4 +212,11 @@ font: inherit;
         padding: 3px;
     }
 
+    .singlePostDesc::first-letter{
+        font-weight: 500;
+        margin-left: 10px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
 }
