@@ -1,8 +1,9 @@
-import axios from 'axios';
+import axios from "axios";
 
 var axiosInstance = axios.create({
-  baseURL: 'https://blog-backend28.herokuapp.com',
-  /* other custom settings */
+	baseURL: "https://puce-glamorous-cocoon.cyclic.app",
+	// baseURL: "http://localhost:5000",
+	/* other custom settings */
 });
 
 export default axiosInstance;
