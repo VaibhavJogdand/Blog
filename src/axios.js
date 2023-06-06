@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 var axiosInstance = axios.create({
-  baseURL: 'https://blog-backend28.herokuapp.com',
+  baseURL: 'https://puce-glamorous-cocoon.cyclic.app',
   /* other custom settings */
 });
 
